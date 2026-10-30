@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-/* ── Computer Modern via Latin Modern Web ─────────────────────────────── */
-
-
-    #navbar-iframe {
-    display: none !important;
-    height: 0 !important;
-    visibility: hidden !important;
-}
+#navbar-iframe { display: none !important; height: 0 !important; visibility: hidden !important; }
 
 @font-face {
   font-family: 'LM Roman';
@@ -44,7 +36,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── PAGE ────────────────────────────────────────────────────────────── */
 .page {
   width: 760px;
   margin: 36px auto;
@@ -53,158 +44,76 @@ body {
   box-shadow: 0 2px 24px rgba(0,0,0,0.13);
 }
 
-/* ── HEADER ──────────────────────────────────────────────────────────── */
 .header { text-align: center; margin-bottom: 12px; }
-
 .name {
   font-family: 'LM Roman', 'EB Garamond', Georgia, serif;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-bottom: 7px;
-  color: #000;
+  font-size: 26px; font-weight: 700; letter-spacing: 2.8px;
+  text-transform: uppercase; line-height: 1.2; margin-bottom: 7px; color: #000;
 }
-
 .contact-bar {
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  color: #000;
-  flex-wrap: wrap;
+  font-size: 13px; display: flex; justify-content: center; align-items: center;
+  gap: 20px; color: #000; flex-wrap: wrap;
 }
+.contact-bar .ci { display: flex; align-items: center; gap: 5px; }
 
-.contact-bar .ci {
-  display: flex; align-items: center; gap: 5px;
-}
-
-.contact-bar a { color: #1f5db0; text-decoration: none; }
-.contact-bar a:hover { text-decoration: underline; }
-
-/* ── SECTION ─────────────────────────────────────────────────────────── */
 .sec { margin-top: 0; }
-
 .sec-head {
-  font-size: 12.6px;
-  font-weight: 700;
-  color: #1f5db0;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  border-bottom: 0.8px solid #888;
-  padding-bottom: 1.5px;
-  margin-top: 13px;
-  margin-bottom: 5px;
+  font-size: 12.6px; font-weight: 700; color: #1f5db0; text-transform: uppercase;
+  letter-spacing: 0.6px; border-bottom: 0.8px solid #888; padding-bottom: 1.5px;
+  margin-top: 13px; margin-bottom: 5px;
 }
 
-/* ── EDUCATION ───────────────────────────────────────────────────────── */
-.edu-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1px;
-}
+.edu-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1px; }
 .edu-l .deg { font-size: 13.8px; font-weight: 700; }
 .edu-l .sch { font-size: 13px; font-style: italic; }
 .edu-r { font-size: 13px; text-align: right; line-height: 1.5; white-space: nowrap; }
 
-/* ── BULLET LISTS ────────────────────────────────────────────────────── */
 ul.blist { list-style: none; margin: 0; }
-
 ul.blist > li {
-  font-size: 13px;
-  line-height: 1.52;
-  position: relative;
-  padding-left: 16px;
-  margin-bottom: 2.5px;
+  font-size: 13px; line-height: 1.52; position: relative;
+  padding-left: 16px; margin-bottom: 2.5px;
 }
-
 ul.blist > li::before {
-  content: "•";
-  position: absolute; left: 3px; top: 0;
-  font-size: 14px; line-height: 1.52;
+  content: "•"; position: absolute; left: 3px; top: 0; font-size: 14px; line-height: 1.52;
 }
 
-/* ── SKILLS ──────────────────────────────────────────────────────────── */
 .sk { font-size: 13px; line-height: 1.62; padding-left: 14px; }
 
-/* ── PROJECT BLOCK ───────────────────────────────────────────────────── */
 .proj { margin-bottom: 9px; }
-
-.proj-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.proj-name {
-  font-size: 13.6px;
-  font-weight: 400;
-  color: #1f5db0;
-  text-decoration: none;
-}
-.proj-name:hover { text-decoration: underline; }
-
-.ext { font-size: 10.5px; color: #1f5db0; margin-left: 3px; vertical-align: 1px; }
-
+.proj-head { display: flex; justify-content: space-between; align-items: baseline; }
+.proj-name { font-size: 13.6px; font-weight: 400; color: #1f5db0; text-decoration: none; }
 .proj-year { font-size: 13px; font-style: italic; color: #000; }
-
 .proj-tags { font-size: 12.4px; font-style: italic; color: #000; margin-bottom: 1.5px; }
 
 ul.pbullets { list-style: none; margin: 0; }
 ul.pbullets > li {
-  font-size: 13px;
-  line-height: 1.5;
-  position: relative;
-  padding-left: 16px;
-  margin-bottom: 1px;
+  font-size: 13px; line-height: 1.5; position: relative;
+  padding-left: 16px; margin-bottom: 1px;
 }
 ul.pbullets > li::before {
-  content: "◦";
-  position: absolute; left: 2px; top: 0;
-  font-size: 13px; line-height: 1.5;
+  content: "◦"; position: absolute; left: 2px; top: 0; font-size: 13px; line-height: 1.5;
 }
 
-/* ── LINKS ───────────────────────────────────────────────────────────── */
 a { color: #1f5db0; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ── PRINT BUTTON ────────────────────────────────────────────────────── */
 .btn-bar {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 28px;
-  padding-top: 18px;
-  border-top: 0.8px solid #c8d8ef;
+  display: flex; justify-content: flex-end; margin-top: 28px;
+  padding-top: 18px; border-top: 0.8px solid #c8d8ef;
 }
-
 .btn-print {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  color: #1f5db0;
-  padding: 6px 10px;
-  border: 1.5px solid #1f5db0;
-  border-radius: 4px;
-  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; color: #1f5db0; padding: 6px 10px;
+  border: 1.5px solid #1f5db0; border-radius: 4px; cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
+.btn-print:hover { background: #1f5db0; color: #fff; }
 
-.btn-print:hover {
-  background: #1f5db0;
-  color: #fff;
-}
-
-/* ── PRINT ───────────────────────────────────────────────────────────── */
 @media print {
   body { background: #fff; }
   .page { box-shadow: none; margin: 0; }
   .btn-bar { display: none; }
 }
-
 @media (max-width: 820px) {
   .page { width: 100%; margin: 0; padding: 28px 22px 36px; box-shadow: none; }
   .edu-row { flex-direction: column; }
@@ -212,321 +121,169 @@ a:hover { text-decoration: underline; }
   .proj-head { flex-wrap: wrap; gap: 4px; }
 }
 </style>
-
-
 </head>
-<body><script type="text/javascript">
-    function setAttributeOnload(object, attribute, val) {
-      if(window.addEventListener) {
-        window.addEventListener('load',
-          function(){ object[attribute] = val; }, false);
-      } else {
-        window.attachEvent('onload', function(){ object[attribute] = val; });
-      }
-    }
-  </script>
+<body>
 <div id="navbar-iframe-container"></div>
 
 <div class="page">
 
-<!-- ══ HEADER ══════════════════════════════════════════════════════ -->
+<!-- HEADER -->
 <div class="header">
   <div class="name">ABHYUDAYA POKHREL</div>
-
   <div class="contact-bar">
-
     <span class="ci">
-      <svg width="13" height="10" viewBox="0 0 20 15" fill="currentColor">
-        <path d="M18 0H2C.9 0 0 .67 0 1.5v12C0 14.33.9 15 2 15h16c1.1 0 2-.67 2-1.5v-12C20 .67 19.1 0 18 0zm0 3L10 8.25 2 3V1.5L10 6.75 18 1.5V3z"/>
-      </svg>
+      <svg width="13" height="10" viewBox="0 0 20 15" fill="currentColor"><path d="M18 0H2C.9 0 0 .67 0 1.5v12C0 14.33.9 15 2 15h16c1.1 0 2-.67 2-1.5v-12C20 .67 19.1 0 18 0zm0 3L10 8.25 2 3V1.5L10 6.75 18 1.5V3z"/></svg>
       <a href="mailto:abhyudayapokhrel23@gmail.com">Email</a>
     </span>
-
     <span class="ci">
-      <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.07c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
-      </svg>
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.07c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
       <a href="https://github.com/abhyudayapokhrel" target="_blank">GitHub</a>
     </span>
-
     <span class="ci">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43A2.06 2.06 0 115.35 3.3a2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
-      </svg>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43A2.06 2.06 0 115.35 3.3a2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
       <a href="https://linkedin.com/in/abhyudaya-pokhrel" target="_blank">LinkedIn</a>
     </span>
-
     <span class="ci">
-      <svg width="10" height="13" viewBox="0 0 10 14" fill="currentColor">
-        <path d="M5 0C2.79 0 1 1.79 1 4c0 3 4 9 4 9s4-6 4-9c0-2.21-1.79-4-4-4zm0 5.5A1.5 1.5 0 115 2.5 1.5 1.5 0 015 5.5z"/>
-      </svg>
+      <svg width="10" height="13" viewBox="0 0 10 14" fill="currentColor"><path d="M5 0C2.79 0 1 1.79 1 4c0 3 4 9 4 9s4-6 4-9c0-2.21-1.79-4-4-4zm0 5.5A1.5 1.5 0 115 2.5 1.5 1.5 0 015 5.5z"/></svg>
       Dhulikhel, Kavre, Nepal
     </span>
-
   </div>
 </div>
-<!-- ══ EDUCATION ════════════════════════════════════════════════════ -->
+
+<!-- EDUCATION -->
 <div class="sec">
   <div class="sec-head">Education</div>
-
   <div class="edu-row">
     <div class="edu-l">
       <div class="deg">Bachelor of Engineering in Computer Engineering</div>
       <div class="sch">Kathmandu University</div>
     </div>
-
-    <div class="edu-r">
-      Expected 2028
-    </div>
+    <div class="edu-r">Expected 2028</div>
   </div>
 </div>
 
-<!-- ══ RELEVANT COURSEWORK ══════════════════════════════════════════ -->
+<!-- RELEVANT COURSEWORK -->
 <div class="sec">
   <div class="sec-head">Relevant Coursework</div>
-
   <ul class="blist">
-    <li><strong>Programming:</strong> Computer Programming, Object-Oriented Programming</li>
-
-    <li><strong>Mathematics:</strong> Calculus &amp; Linear Algebra, Differential Calculus, Discrete Mathematics, Statistics &amp; Probability</li>
-
-    <li><strong>Core Computer Science:</strong> Data Structures &amp; Algorithms, Database Management Systems, Networking</li>
-
-    <li><strong>Systems:</strong> Digital Logic, Microprocessor &amp; Assembly Language</li>
+    <li><strong>Computer Engineering:</strong> Digital Logic, Digital Electronics, Electronics Engineering, Microprocessors &amp; Assembly Language</li>
+    <li><strong>Computer Systems:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Computer Programming, Database Management Systems, Communication &amp; Networking</li>
+    <li><strong>Engineering Mathematics:</strong> Calculus &amp; Linear Algebra, Discrete Mathematics, Statistics &amp; Probability, Differential Equations, Numerical Methods</li>
+    <li><strong>Engineering Foundations:</strong> Engineering Projects, Engineering Drawing</li>
   </ul>
 </div>
 
-<!-- ══ TECHNICAL SKILLS ═════════════════════════════════════════════ -->
+<!-- TECHNICAL SKILLS -->
 <div class="sec">
-
   <div class="sec-head">Technical Skills</div>
-
-  <div class="sk">
-    <strong>Programming Languages:</strong>
-    Python, C/C++, JavaScript, SQL
-  </div>
-
-  <div class="sk">
-    <strong>Machine Learning &amp; Data:</strong>
-    PyTorch, TensorFlow, Scikit-Learn, NumPy, Pandas, Matplotlib
-  </div>
-
-  <div class="sk">
-    <strong>Web &amp; Systems:</strong>
-    Flask, React, Flutter, SQLAlchemy
-  </div>
-
-  <div class="sk">
-    <strong>Tools:</strong>
-    Git, GitHub, Jupyter Notebooks
-  </div>
-
-  <div class="sk">
-    <strong>Soft Skills:</strong>
-    Team Collaboration, Technical Communication, Problem Solving
-  </div>
-
+  <div class="sk"><strong>Programming Languages:</strong> Python, C/C++, JavaScript, SQL</div>
+  <div class="sk"><strong>Machine Learning &amp; Data:</strong> PyTorch, TensorFlow, Scikit-Learn, NumPy, Pandas, Matplotlib</div>
+  <div class="sk"><strong>Web &amp; Systems:</strong> Flask, React, Flutter, SQLAlchemy</div>
+  <div class="sk"><strong>Tools:</strong> Git, GitHub, Jupyter Notebooks</div>
+  <div class="sk"><strong>Soft Skills:</strong> Team Collaboration, Technical Communication, Problem Solving</div>
 </div>
-<!-- ══ EXPERIENCE ═══════════════════════════════════════════════════ -->
+
+<!-- EXPERIENCE -->
 <div class="sec">
   <div class="sec-head">Experience</div>
-
   <div class="proj">
-
     <div class="proj-head">
-      <div>
-        <span class="proj-name"><a href="https://ilprl.ku.edu.np/" target="_blank">Machine Translation Intern</a></span>
-      </div>
-
-      <div class="proj-year">
-        Jul 2026 – Oct 2026
-      </div>
+      <div><span class="proj-name"><a href="https://ilprl.ku.edu.np/" target="_blank">Machine Translation Intern</a></span></div>
+      <div class="proj-year">Jul 2026 – Oct 2026</div>
     </div>
-
-    <div class="proj-tags">
-      Information and Language Processing Research Lab
-    </div>
-
+    <div class="proj-tags">Information and Language Processing Research Lab</div>
     <ul class="pbullets">
-      <!-- <li>Completed a three-month internship under the Machine Translation research theme.</li> -->
-      <!-- <li>Contributed to a trilingual Nepali–English–Tamang machine translation project.</li> -->
+      <li>A three-month internship under the Machine Translation research theme.</li>
+      <li>Contributed to a trilingual Nepali–English–Tamang machine translation project.</li>
+      <li>Continuing research and co-authoring a research paper on this work (in progress).</li>
     </ul>
-
   </div>
 </div>
 
-<!-- ══ PROJECTS ══════════════════════════════════════════════════════ -->
+<!-- PROJECTS -->
 <div class="sec">
+  <div class="sec-head">Projects</div>
 
-<div class="sec-head">Projects</div>
+  <div class="proj">
+    <div class="proj-head">
+      <div><span class="proj-name"><a href="https://github.com/abhyudayapokhrel/mikha" target="_blank">Mikha: Your Legal Eye</a></span></div>
+      <div class="proj-year">2026</div>
+    </div>
+    <div class="proj-tags">Flask • Gemma (multimodal) • RAG • edge-tts</div>
+    <ul class="pbullets">
+      <li>Built a pipeline that transcribes photographed Nepali legal documents and splits them into clauses using the document's own numbering.</li>
+      <li>Grounded each clause against the actual text of Nepali law (Labour Act 2017, National Civil Code 2017) via embedding-based retrieval over a cached corpus.</li>
+      <li>Generated plain-language, per-clause explanations with risk flags and citations, streamed to the browser as each clause completes; added on-demand text-to-speech and free-form Q&amp;A over the processed document.</li>
+    </ul>
+  </div>
 
-<div class="proj">
+  <div class="proj">
+    <div class="proj-head">
+      <div><span class="proj-name"><a href="https://github.com/abhyudayapokhrel/Lucid" target="_blank">Lucid: Multimodal Mental Health Screening System</a></span></div>
+      <div class="proj-year">2026</div>
+    </div>
+    <div class="proj-tags">React • FastAPI • Node.js/Express • PostgreSQL • Whisper • MentalBERT • Wav2Vec2</div>
+    <ul class="pbullets">
+      <li>Built an end-to-end screening platform that transcribes a user's spoken reflection with Whisper and analyzes both text and audio.</li>
+      <li>Combined MentalBERT text embeddings with Wav2Vec2 acoustic embeddings via late-fusion to classify mental health condition, likely trigger cause, and depression risk level.</li>
+      <li>Implemented the full stack: a FastAPI inference server, a Node/Express + Prisma API and database layer, and a React/Vite frontend.</li>
+    </ul>
+  </div>
 
-<div class="proj-head">
-<div>
-<span class="proj-name"> <a href="https://github.com/abhyudayapokhrel/ChitraDartaa-A-Civic-Issue-Reporting-System" target="_blank">ChitraDartaa — Civic Issue Reporting System</a></span>
+  <div class="proj">
+    <div class="proj-head">
+      <div><span class="proj-name"><a href="https://github.com/abhyudayapokhrel/VanRakshya-A-Forest-Conservation-System" target="_blank">VanRakshya: Forest Conservation System</a></span></div>
+      <div class="proj-year">2026</div>
+    </div>
+    <div class="proj-tags">Python • PyTorch • Streamlit • PyDeck</div>
+    <ul class="pbullets">
+      <li>Developed a multimodal AI system for detecting wildfires, illegal logging, and poaching from drone and CCTV feeds.</li>
+      <li>Built an audio classifier capable of detecting chainsaw sounds and gunshots using a dual-model approach.</li>
+      <li>Created an interactive threat map with one-click ranger dispatch using Streamlit and PyDeck.</li>
+    </ul>
+  </div>
 </div>
 
-<div class="proj-year">2025</div>
-</div>
-
-<div class="proj-tags">
-Flutter • Flask • SQLAlchemy • TensorFlow • YOLO
-</div>
-
-<ul class="pbullets">
-<li>Built a cross-platform Flutter application for reporting civic issues using GPS-tagged images and real-time status tracking.</li>
-
-<li>Trained a YOLO-based image classifier to automatically detect and categorize issue types.</li>
-
-<li>Developed a Flask REST API and administrative dashboard for municipal authorities.</li>
-</ul>
-
-</div>
-
-
-<div class="proj">
-
-<div class="proj-head">
-<div>
-<span class="proj-name"><a href="https://github.com/abhyudayapokhrel/VanRakshya-A-Forest-Conservation-System" target="_blank">VanRakshya — Forest Conservation System</a></span>
-</div>
-
-<div class="proj-year">2026</div>
-</div>
-
-<div class="proj-tags">
-Python • PyTorch • Streamlit • PyDeck
-</div>
-
-<ul class="pbullets">
-
-<li>Developed a multimodal AI system for detecting wildfires, illegal logging, and poaching from drone and CCTV feeds.</li>
-
-<li>Built an audio classifier capable of detecting chainsaw sounds and gunshots using a dual-model approach.</li>
-
-<li>Created an interactive threat map with one-click ranger dispatch using Streamlit and PyDeck.</li>
-
-</ul>
-
-</div>
-
-
-<div class="proj">
-
-<div class="proj-head">
-<div>
-<span class="proj-name"><a href="https://github.com/abhyudayapokhrel/risk_mapper" target="_blank">RiskMapper</a></span>
-</div>
-
-<div class="proj-year">2026</div>
-</div>
-
-<div class="proj-tags">
-JavaScript • Python
-</div>
-
-<ul class="pbullets">
-
-<li>Built a cascading earthquake-risk simulation for Kathmandu using soil composition and building structure data.</li>
-
-<li>Integrated OpenStreetMap to identify the nearest safe evacuation zones.</li>
-
-<li>Generated optimal evacuation routes while accounting for dynamic risk propagation.</li>
-
-</ul>
-
-</div>
-
-</div>
-<!-- ══ OTHER PROJECTS ═══════════════════════════════════════════════ -->
+<!-- OTHER PROJECTS -->
 <div class="sec">
   <div class="sec-head">Other Projects</div>
-
   <ul class="blist">
-
-    <li>
-      <strong><a href="https://github.com/abhyudayapokhrel/GameVault-Project" target="_blank">GameVault</a></strong> — A C++ mini-game arcade built using Raylib and
-      RayGUI featuring Snake, Pong, and Space Invaders with real-time multiplayer
-      over ENet networking.
-    </li>
-
-    <li>
-      <strong><a href="https://github.com/abhyudayapokhrel/XRAI" target="_blank">XRAI</a></strong> — Healthcare AI tool for rapid chest X-ray screening
-      designed to improve diagnostic access in rural clinics in Nepal; developed
-      for KU Hackfest 2025.
-    </li>
-
+    <li><strong><a href="https://github.com/abhyudayapokhrel/ChitraDartaa-A-Civic-Issue-Reporting-System" target="_blank">ChitraDartaa</a></strong>: Civic issue reporting app with GPS-tagged images, YOLO-based issue detection, and a Flask dashboard.</li>
+    <li><strong><a href="https://github.com/abhyudayapokhrel/risk_mapper" target="_blank">RiskMapper</a></strong>: Cascading earthquake-risk simulation for Kathmandu with evacuation-route planning.</li>
+    <li><strong><a href="https://github.com/abhyudayapokhrel/GameVault-Project" target="_blank">GameVault</a></strong>: C++ mini-game arcade (Snake, Pong, Space Invaders) with real-time multiplayer over ENet.</li>
+    <li><strong><a href="https://github.com/abhyudayapokhrel/XRAI" target="_blank">XRAI</a></strong>: Healthcare AI tool for rapid chest X-ray screening in rural clinics; built for KU Hackfest 2025.</li>
   </ul>
 </div>
 
-
-
-<!-- ══ OPEN SOURCE CONTRIBUTIONS ════════════════════════════════════ -->
+<!-- OPEN SOURCE -->
 <div class="sec">
-
-<div class="sec-head">Open Source Contributions</div>
-
-<ul class="blist">
-
-<li>
-<strong> <a href="https://github.com/IOST-ASCOL/doc2tex" target="_blank">doc2tex (Co-creator)</a></strong> — Open-source DOCX ↔ LaTeX converter
-preserving tables, images, equations, and multilingual content.
-54+ GitHub stars and 6 forks.
-</li>
-
-</ul>
-
+  <div class="sec-head">Open Source Contributions</div>
+  <ul class="blist">
+    <li><strong><a href="https://github.com/IOST-ASCOL/doc2tex" target="_blank">doc2tex (Co-creator)</a></strong>: Open-source DOCX ↔ LaTeX converter preserving tables, images, equations, and multilingual content. 56+ GitHub stars and 6 forks.</li>
+  </ul>
 </div>
 
-
-
-<!-- ══ LEADERSHIP & ACTIVITIES ══════════════════════════════════════ -->
+<!-- LEADERSHIP -->
 <div class="sec">
-
-<div class="sec-head">Leadership &amp; Activities</div>
-
-<ul class="blist">
-
-<li>
-<strong>Executive Member, KUCC</strong> (2025 – Present) —
-Organizes technical workshops, coding events, and peer learning sessions for
-the Kathmandu University computing community.
-</li>
-
-<li>
-<strong>LOCUS Hack-a-Week 2026 Finalist</strong> —
-Selected for the finals with VanRakshya and built a functional multimodal AI
-system under one-week hackathon constraints.
-</li>
-
-<li>
-<strong>Infinity Codewave Hackathon Finalist</strong> —
-Selected for the finals with RiskMapper.
-</li>
-
-<li>
-<strong>KU Hackfest 2025</strong> —
-Competed with XRAI, a healthcare AI tool for rapid chest X-ray screening for
-rural clinics.
-</li>
-
-<li>
-<strong>2nd Runner-up, Idea Pitching</strong> —
-ITMEET 2025; presented the e-Badapatra concept.
-</li>
-
-</ul>
-
+  <div class="sec-head">Leadership &amp; Achievements</div>
+  <ul class="blist">
+    <li><strong>Vice President, KUCC</strong> (2026 – Present): Leading early initiatives and supporting the execution of the new tenure's activities.</li>
+    <li><strong>Executive Member, KUCC</strong> (2025 – 2026): Helped organize technical workshops, coding events, and peer-learning initiatives for the Kathmandu University computing community.</li>
+    <li><strong>Winner, Build with Gemma: Margadarshan</strong>: Won the Google DeepMind and Kaggle hackathon with Mikha, a legal assistance project.</li>
+    <li><strong>2nd Runner-up, ITMEET 2025 Idea Pitching</strong>: Presented e-Badapatra, a digital public-service concept.</li>
+    <li><strong>Finalist, LOCUS Hack-a-Week 2026</strong>: Developed VanRakshya, a multimodal AI system, under one-week hackathon constraints.</li>
+    <li><strong>Finalist, Infinity Codewave Hackathon</strong>: Advanced to the finals with RiskMapper.</li>
+    <li><strong>KU Hackfest 2025</strong>: Competed with XR-AI, a healthcare AI system for chest X-ray screening.</li>
+  </ul>
 </div>
 
-
-  <!-- ══ PRINT BUTTON ══════════════════════════════════════════════════ -->
-  <div class="btn-bar">
-    <button class="btn-print" onclick="window.print()" title="Save as PDF / Print">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>&nbsp;Save
-    </button>
-  </div>
+<!-- PRINT BUTTON -->
+<div class="btn-bar">
+  <button class="btn-print" onclick="window.print()" title="Save as PDF / Print">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>&nbsp;Save
+  </button>
+</div>
 
 </div>
-</body></html>
+</body>
+</html>
